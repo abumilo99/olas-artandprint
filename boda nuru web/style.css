@@ -1,0 +1,187 @@
+/* Base Styles */
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.mother {
+    width: 500px; /* Initial width for larger screens */
+    border: 5px solid #000;
+    padding: 20px;
+    background-color: purple;
+    text-align: center;
+    color: white;
+}
+
+/* Lists and Links */
+.down li,
+.ourproject,
+.service2 li {
+    list-style: none;
+}
+
+.contact {
+    color: inherit;
+    text-decoration: none;
+    max-width: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#get {
+    color: #1e90ff;
+}
+
+#frame {
+    color: #ff4500;
+    padding-left: 35px;
+    font-size: 20px;
+}
+
+.ourproject {
+    padding-left: 35px;
+    color: #a57cf1;
+}
+
+/* Services Buttons */
+.service-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.service-btn:nth-child(1) {
+    background-color: #1e90ff; /* House Paint */
+}
+.service-btn:nth-child(2) {
+    background-color: #ff4500; /* Printing */
+}
+.service-btn:nth-child(3) {
+    background-color: #a57cf1; /* Branding */
+}
+.service-btn:hover {
+    opacity: 0.9;
+}
+
+/* Image Gallery */
+.image {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+    border: 1px solid #ff4500;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+.footer img {
+    width: 25px;
+    margin: 5px;
+}
+
+/* Details Styling */
+.service2 li {
+    font-size: small;
+    padding-left: 40px;
+    color: #1e90ff;
+}
+
+.aboutus p {
+    color: #f84b0b;
+    font-size: medium;
+}
+
+.service p {
+    color: #a57cf1;
+    font-size: medium;
+}
+
+b {
+    color: #f84b0b;
+}
+
+/* Responsive Styles */
+
+/* For tablets and medium-sized screens */
+@media (max-width: 768px) {
+    .mother {
+        width: 90%; /* Adjusted width to fit within smaller screens */
+        padding: 15px;
+    }
+
+    .service-btn {
+        font-size: 0.9em;
+        padding: 8px 15px;
+        width: 100%; /* Make buttons full width for better touch experience */
+    }
+
+    .image img {
+        width: 80px; /* Reduce image size */
+        height: 80px;
+    }
+
+    #frame,
+    .ourproject {
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+
+    .service2 li {
+        padding-left: 20px;
+    }
+}
+
+/* For small phones and very small screens */
+@media (max-width: 480px) {
+    .mother {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .service-btn {
+        font-size: 0.8em;
+        padding: 6px 10px;
+    }
+
+    .image img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .footer {
+        font-size: 0.7rem;
+    }
+}
+
+#help img {
+    vertical-align: middle;
+}
+
+
+summary{
+    list-style: none;
+}
