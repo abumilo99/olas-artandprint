@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: purple;
+    color: #fff;
+    padding: 20px 0;
+}
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+header p {
+    font-size: 1.2em;
+}
+
+/* Services Button Section */
+.services {
+    margin: 20px 0;
+}
+.service-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.service-btn:nth-child(1) {
+    background-color: #1e90ff; /* House Paint */
+}
+.service-btn:nth-child(2) {
+    background-color: #ff4500; /* Printing */
+}
+.service-btn:nth-child(3) {
+    background-color: #6a0dad; /* Branding */
+}
+.service-btn:hover {
+    opacity: 0.9;
+}
+
+/* Project Section */
+.projects {
+    padding: 20px;
+    background-color: #fff;
+}
+.projects h2 {
+    margin-bottom: 20px;
+}
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.project-gallery img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+.video {
+    margin-top: 20px;
+}
+.video h3 {
+    margin-bottom: 10px;
+}
+video {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    header p {
+        font-size: 1em;
+    }
+    .service-btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+    .project-gallery img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+    header p {
+        font-size: 0.9em;
+    }
+    .service-btn {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+    .project-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-gallery img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    .projects h2 {
+        font-size: 1.5em;
+    }
+}
